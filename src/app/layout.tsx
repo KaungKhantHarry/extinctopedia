@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../../styles/globals.css";
+import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import NavBar from "../components/app/layout/NavBar/NavBar";
 
