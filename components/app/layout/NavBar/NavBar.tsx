@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { ThemeToggleButton } from '../../../ui/ThemeToggleButton'
+import { ThemeToggleButton } from '../../../common/ThemeToggleButton'
 
 const NavBar = () => {
   return (
@@ -12,7 +12,7 @@ const NavBar = () => {
                 </Link>
             </div>
             <div>
-                  
+
             </div>
             <div>
                 <ThemeToggleButton />
