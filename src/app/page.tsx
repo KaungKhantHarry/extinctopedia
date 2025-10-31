@@ -1,9 +1,12 @@
-import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
+import Intro from '@/components/app/home/Intro/Intro'
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      
+      <Intro />
     </div>
-  );
+  )
 }
+
+export default Home
