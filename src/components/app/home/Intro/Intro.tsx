@@ -29,7 +29,7 @@ const Intro = () => {
                     An animal is considered extinct when the last remaining member of its species dies out and there is not a single individual left on Earth. Causes of extinction might include an epidemic, extreme climate changes, loss of food sources, and destruction of their natural habitats. When a large number of species goes out of existence in some major calamity, it is called an extinction event
                 </motion.p>
             </div>
-            <div className='flex py-[150px] px-[50px]'>
+            <div className='flex py-[150px] px-[50px] gap-4'>
                 <div className='w-[50%]'>
                     <motion.h1 
                         className='text-center text-white font-bold tracking-wider text-3xl'
