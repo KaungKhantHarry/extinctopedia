@@ -6,8 +6,8 @@ import { GiEarthAfricaEurope } from "react-icons/gi";
 
 const CriticalHabitats = () => {
     return (
-        <div className='flex flex-col xl:flex-row'>
-            <div className='p-5 flex flex-col gap-5'>
+        <div className='flex flex-col md:flex-row xl:flex-row pt-10'>
+            <div className='p-5 flex flex-col gap-5 md:w-[40%] xl:w-[50%]'>
                 <div>
                     <div className="w-full flex gap-2 justify-center items-center">
                         <RiTreeFill className="size-[100px] text-[#BA5500]" />
@@ -42,7 +42,7 @@ const CriticalHabitats = () => {
                     </p>
                 </div>
             </div>
-            <div className='px-5 py-15'>
+            <div className='px-5 py-15 md:w-[60%] xl:w-[50%]'>
                 <p className='w-fit border-r-2 border-b-2 border-green-700 pr-4 pb-4 font-mono font-semibold'>
                     Do you know?
                 </p>
@@ -55,7 +55,7 @@ const CriticalHabitats = () => {
                 <p className='pt-5 pb-15 text-end italic text-sm'>
                     Eric Dinerstein(Frontiers in Science, 2024)
                 </p>
-                <Link href="/species" className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold'>
+                <Link href="/species" className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
                     See Extinct Species
                 </Link>
             </div>

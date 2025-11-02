@@ -6,7 +6,7 @@ import bgPic from '../../../../../public/home/c464dc16fa164a1eba067271a1253ddb.j
 
 const Intro = () => {
     return (
-        <div className='w-full h-[1000px] bg-cover bg-center bg-no-repeat'
+        <div className='w-full h-auto bg-cover bg-center bg-no-repeat'
             style={{ backgroundImage: `url(${bgPic.src})` }}>
             <h1 className='font-serif text-5xl text-white text-center py-10'>
                 All That is Gone! But Not Forgetten
