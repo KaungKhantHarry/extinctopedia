@@ -11,7 +11,7 @@ const SpeciesIntro = () => {
             <div className="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
             <div className='py-15 px-5 flex flex-col gap-7'>
                 <motion.h1
-                    className='relative text-center font-semibold text-white font-mono text-2xl tracking-tighter'
+                    className='relative text-center font-semibold text-white font-mono text-2xl tracking-tighter md:text-3xl xl:text-4xl'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -19,7 +19,7 @@ const SpeciesIntro = () => {
                     A Promise to the Fallen
                 </motion.h1>
                 <motion.p 
-                    className='relative text-center text-white text-md tracking-wide'
+                    className='relative text-center text-white text-md tracking-wide md:text-xl xl:text-xl'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -27,7 +27,7 @@ const SpeciesIntro = () => {
                     Every creature here once walked, swam, or flew across our planet. But Gone is Gone. Here lie the memories of those who vanished from Earth. Once lost, a species never comes back.
                 </motion.p>
                 <motion.p 
-                    className='relative text-center text-white text-md tracking-wide'
+                    className='relative text-center text-white text-md tracking-wide md:text-xl xl:text-xl'
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
