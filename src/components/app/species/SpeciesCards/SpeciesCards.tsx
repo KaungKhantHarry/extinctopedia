@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import SpeciesCard from '../SpeciesCard/SpeciesCard'
 import axios from 'axios';
 import { ExtinctSpecies, ExtinctSpeciesResponse } from '@/type';
@@ -70,13 +70,7 @@ const SpeciesCards = () => {
             return species.map((s) => (
                 <SpeciesCard 
                     key={s.binomialName}
-                    commonName={s.commonName} 
-                    wikiLink={s.wikiLink}
-                    shortDesc={s.shortDesc} 
-                    binomialName={s.binomialName}
-                    location={s.location}
-                    lastRecord={s.lastRecord}
-                    imageSrc={s.imageSrc}/>
+                    species={s}/>
             ));
         },
         [species]
