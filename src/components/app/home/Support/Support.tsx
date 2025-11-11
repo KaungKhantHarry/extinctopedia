@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Support = () => {
   return (
-    <div className='relative w-full h-auto bg-cover bg-center bg-no-repeat text-white'
+    <div className='relative w-full h-auto bg-cover bg-center bg-no-repeat text-white z-10'
         style={{ backgroundImage: `url(${rainforest.src})` }}>
         <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
         <h1 className='relative pt-10 font-mono text-2xl tracking-tight text-center text-white font-semibold'>

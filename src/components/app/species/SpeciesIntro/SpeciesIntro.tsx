@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const SpeciesIntro = () => {
     return (
-        <div className='relative w-full h-auto bg-cover bg-center bg-no-repeat'
+        <div className='relative w-full h-auto bg-cover bg-center bg-no-repeat z-10'
             style={{ backgroundImage: `url(${bgPic.src})` }}>
             <div className="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
             <div className='py-15 px-5 flex flex-col gap-7'>

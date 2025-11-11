@@ -14,11 +14,8 @@ const getValidImageUrl = (url?: string | boolean) => {
 
 const SpeciesDetail = () => {
 
-    //const { binomialName } = useParams<{ binomialName: string }>();
     const searchParams = useSearchParams();
     const speciesData = searchParams.get("species");
-
-    //const decodeName = decodeURIComponent(binomialName);
     const species = speciesData ? JSON.parse(speciesData) : null;
 
     return (

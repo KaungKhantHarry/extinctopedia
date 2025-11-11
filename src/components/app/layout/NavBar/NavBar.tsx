@@ -16,7 +16,7 @@ const NavBar = () => {
     const pathname = usePathname();
 
     return (
-        <nav className='w-full h-auto flex flex-col justify-center px-7 bg-gray-100 dark:bg-gray-800'>
+        <nav className='fixed w-full h-[150px] flex flex-col justify-center px-7 bg-gray-100 dark:bg-gray-800 z-50'>
             <div className='h-14 w-auto flex justify-between items-center'>
                 <div>
                     <Link href="/" className='font-medium text-4xl text-black dark:text-white'>

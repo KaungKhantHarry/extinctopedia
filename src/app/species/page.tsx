@@ -4,7 +4,7 @@ import React from 'react'
 
 const SpeciesPage = () => {
     return (
-        <div className='h-auto w-full'>
+        <div className='h-auto'>
             <SpeciesIntro />
             <SpeciesCards />
         </div>
