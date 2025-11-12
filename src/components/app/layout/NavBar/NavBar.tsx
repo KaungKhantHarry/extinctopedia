@@ -1,14 +1,14 @@
 "use client"
 
 import Link from 'next/link'
-import React from 'react'
 import { ThemeToggleButton } from '../../../common/ThemeToggleButton'
 import { usePathname } from 'next/navigation';
 
 const navBarItems = [
     { name: "Home", link: "/"},
     { name: "Sepcies", link: "/species"},
-    { name: "Favorites", link: "/favorites"},
+    { name: "Endangered", link: "/endangered"},
+    { name: "Favorites", link: "/favorites"}
 ];
 
 const NavBar = () => {
