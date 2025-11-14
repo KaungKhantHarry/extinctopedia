@@ -10,5 +10,9 @@ export const resourcesData = [
     {
         name: "Extinct Animals", 
         link: "https://www.extinctanimals.org/"
+    },
+    {
+        name: "Amazon Conservation",
+        link: "https://www.amazonconservation.org/"
     }
 ]

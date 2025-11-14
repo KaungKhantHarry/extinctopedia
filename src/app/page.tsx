@@ -1,5 +1,7 @@
 import CriticalHabitats from '@/components/app/home/CriticalHabitats/CriticalHabitats'
+import HowWeProtect from '@/components/app/home/HowWeProtect/HowWeProtect'
 import Intro from '@/components/app/home/Intro/Intro'
+import Results from '@/components/app/home/Results/Results'
 import ShopNow from '@/components/app/home/ShopNow/ShopNow'
 import SuccessStories from '@/components/app/home/SuccessStories/SuccessStories'
 import Support from '@/components/app/home/Support/Support'
@@ -13,6 +15,8 @@ const Home = () => {
       <Support />
       <SuccessStories />
       <ShopNow />
+      <HowWeProtect />
+      <Results />
       <Sources />
     </div>
   )
