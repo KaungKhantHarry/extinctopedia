@@ -2,6 +2,7 @@ import EndangeredAnimals from "@/components/app/endangered/EndangeredAnimals/End
 import EndangeredIntro from "@/components/app/endangered/EndangeredIntro/EndangeredIntro"
 import HelpThem from "@/components/app/endangered/HelpThem/HelpThem"
 import TakeAction from "@/components/app/endangered/TakeAction /TakeAction"
+import WhereWWFWork from "@/components/app/endangered/WhereWWFWork/WhereWWFWork"
 import Sources from "@/components/common/Sources"
 
 const page = () => {
@@ -9,6 +10,7 @@ const page = () => {
         <div>
             <EndangeredIntro />
             <EndangeredAnimals />
+            <WhereWWFWork />
             <TakeAction />
             <HelpThem />
             <Sources />
