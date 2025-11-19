@@ -3,6 +3,9 @@
 import Link from 'next/link'
 import { ThemeToggleButton } from '../../../common/ThemeToggleButton'
 import { usePathname } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
+import LogoutButton from '@/components/common/LogoutButton';
+import LoginButton from '@/components/common/LoginButton';
 
 const navBarItems = [
     { name: "Home", link: "/"},
@@ -14,6 +17,7 @@ const navBarItems = [
 const NavBar = () => {
 
     const pathname = usePathname();
+    const { user } = useAuth();
 
     return (
         <nav className='fixed w-full h-[150px] flex flex-col justify-center px-7 bg-gray-100 dark:bg-gray-800 z-50'>
@@ -38,6 +42,9 @@ const NavBar = () => {
                 </div>
                 <div>
                     <ThemeToggleButton />
+                </div>
+                <div>
+                    { user ? <LogoutButton/> : <LoginButton/> }
                 </div>
             </div>
             <hr className='border-gray-800 dark:border-gray-300 my-2'/>
