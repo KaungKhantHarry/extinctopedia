@@ -1,45 +1,54 @@
-"use client"
+"use client";
 
-import { useEffect, useMemo, useRef, useState } from 'react'
-import SpeciesCard from '../SpeciesCard/SpeciesCard'
-import axios from 'axios';
-import { ExtinctSpecies, ExtinctSpeciesResponse } from '@/type';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import SpeciesCard from '../SpeciesCard/SpeciesCard';
+import { ExtinctSpecies } from '@/type';
+import allSpeciesData from '../../../../data/local-species-data.json'; 
+
+const ALL_SPECIES: ExtinctSpecies[] = allSpeciesData.data as ExtinctSpecies[];
+const TOTAL_SPECIES_COUNT = ALL_SPECIES.length;
+const BATCH_SIZE = 12;
 
 const SpeciesCards = () => {
-
     const [species, setSpecies] = useState<ExtinctSpecies[]>([]);
     const [page, setPage] = useState<number>(1);
     const [loading, setLoading] = useState<boolean>(false);
     const [hasMore, setHasMore] = useState<boolean>(true);
+
     const loaderDivRef = useRef<HTMLDivElement | null>(null);
-    const loaderRef = useRef(false);
+    const isFetchingRef = useRef(false);
 
     const fatchExtinctSpecies = async (pageNum: number) => {
+        if (isFetchingRef.current || !hasMore) return;
+
         try {
-            loaderRef.current = true;
+            isFetchingRef.current = true;
             setLoading(true);
 
-            const batchSize = 12;
-            const start = (pageNum - 1) * batchSize + 1;
-            const end = start + batchSize - 1;               
-
-            const requests = [];
-            for (let i = start; i <= end && i <= 804; i++) {
-                requests.push(axios.get(`https://extinct-api.herokuapp.com/api/v1/animal/${i}`));
+            const startIndex = (pageNum - 1) * BATCH_SIZE;
+            
+            if (startIndex >= TOTAL_SPECIES_COUNT) {
+                setHasMore(false);
+                return;
             }
 
-            const results = await Promise.all(requests);
-            const batchData = results.map((res) => res.data.data[0]);
+            const endIndex = startIndex + BATCH_SIZE;
+
+            const batchData = ALL_SPECIES.slice(startIndex, endIndex);
+
+            await new Promise(resolve => setTimeout(resolve, 300));
 
             setSpecies((prev) => [...prev, ...batchData]);
-            if (end >= 804) setHasMore(false);
+
+            if (endIndex >= TOTAL_SPECIES_COUNT) {
+                setHasMore(false);
+            }
         } catch (error) {
-            console.error('Error fatching Extinct Species: ', error);
-            return [];
+            console.error('Error processing local species data: ', error);
         } finally {
-            loaderRef.current = false;
+            isFetchingRef.current = false;
             setLoading(false);
-        };
+        }
     };
 
     useEffect(() => {
@@ -47,23 +56,24 @@ const SpeciesCards = () => {
     }, [page]);
 
     useEffect(() => {
-        if (!hasMore) return;
+        if (!hasMore) return; 
 
         const observer = new IntersectionObserver(
             (entries) => {
-            if (entries[0].isIntersecting && !loaderRef.current) {
-                setPage((prev) => prev + 1);
-            }
+                if (entries[0].isIntersecting && !isFetchingRef.current) {
+                    setPage((prev) => prev + 1);
+                }
             },
-            { threshold: 1.0 }
+            { threshold: 0.1 } 
         );
 
         const currentLoader = loaderDivRef.current;
         if (currentLoader) observer.observe(currentLoader);
+
         return () => {
             if (currentLoader) observer.unobserve(currentLoader);
         };
-    }, [hasMore, loading]);
+    }, [hasMore]); 
 
     const renderedItems = useMemo(() =>
         {
@@ -78,13 +88,18 @@ const SpeciesCards = () => {
 
     return (
         <>
-            {loading && <p className="text-center mt-4">Loading more...</p>}
             <div className='px-5 py-15 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5'>
                 {renderedItems}
             </div>
-            <div ref={loaderDivRef} className="h-10"></div>
+            {hasMore && (
+                <div 
+                    ref={loaderDivRef} 
+                    className="h-10 flex justify-center items-center p-4">
+                    {loading && <p className="text-center">Loading more...</p>}
+                </div>
+            )}
         </>
     )
 }
 
-export default SpeciesCards
+export default SpeciesCards;
