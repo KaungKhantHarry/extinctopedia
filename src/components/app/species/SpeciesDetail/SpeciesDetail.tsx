@@ -6,6 +6,8 @@ import { GiEarthAfricaEurope } from "react-icons/gi";
 import Link from 'next/link';
 import { getDefaultCommonName, getValidImageUrl } from '../SpeciesCard/SpeciesCard';
 import { useAuth } from '@/context/AuthContext';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '@/firebase/config';
 
 const SpeciesDetail = () => {
 
@@ -13,12 +15,22 @@ const SpeciesDetail = () => {
     const speciesData = searchParams.get("species");
     const species = speciesData ? JSON.parse(speciesData) : null;
     const { user } = useAuth();
-    const router = useRouter();
 
-    const handleSaveSpeciesToFav = () => {
+    const handleSaveSpeciesToFav = async () => {
         if(!user) {
             alert("If you want to save Species to Favouriate Page, you have to log in first!");
+            return; 
         }   
+        try {
+            await setDoc(doc(db, "users", user.uid, "savedSpecies", species.binomialName), {
+                speciesBinomialName: species.binomialName,
+                savedAt: Date.now(),
+            });
+
+            alert("Species saved!");
+        } catch (error) {
+            console.log("Error: ", error);
+        }
     };
 
     return (
@@ -65,7 +77,9 @@ const SpeciesDetail = () => {
                         </div>
                     </div>
                     <div className='flex justify-between md:justify-start md:gap-10'>
-                        <button className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
+                        <button 
+                            onClick={handleSaveSpeciesToFav}
+                            className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
                             Save
                         </button>
                         <Link href="/species" className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
