@@ -1,28 +1,31 @@
 'use client'
 
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
-import pic from '../../../../../public/species/1000_F_597479556_7bbQ7t4Z8k3xbAloHFHVdZIizWK1PdOo.jpg';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import Link from 'next/link';
-
-const getValidImageUrl = (url?: string | boolean) => {
-    if (!url || url === "false") return pic; 
-    if (typeof url === "string" && url.startsWith("http")) return url;
-    return pic;
-};
+import { getDefaultCommonName, getValidImageUrl } from '../SpeciesCard/SpeciesCard';
+import { useAuth } from '@/context/AuthContext';
 
 const SpeciesDetail = () => {
 
     const searchParams = useSearchParams();
     const speciesData = searchParams.get("species");
     const species = speciesData ? JSON.parse(speciesData) : null;
+    const { user } = useAuth();
+    const router = useRouter();
+
+    const handleSaveSpeciesToFav = () => {
+        if(!user) {
+            alert("If you want to save Species to Favouriate Page, you have to log in first!");
+        }   
+    };
 
     return (
         <div className='p-5'>
             {species ? (
                 <div className="flex flex-col gap-5">
-                    <p className='text-3xl font-bold text-center'>{species.commonName}</p>
+                    <p className='text-3xl font-bold text-center'>{getDefaultCommonName(species.commonName)}</p>
                     <p className='text-xl font-semibold text-center'>{species.binomialName}</p>
                     <div className='flex flex-col md:flex-row gap-5'>
                         <div className="relative w-full h-64 md:w-[50%] md:h-auto xl:h-96">

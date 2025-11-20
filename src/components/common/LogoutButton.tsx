@@ -29,12 +29,6 @@ const LogoutButton = () => {
             {open && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
                     <div className="bg-white rounded-xl dark:text-black border border-default rounded-base p-6 w-full max-w-md">
-                        <button
-                        onClick={() => setOpen(false)}
-                        className="absolute top-3 right-3 text-body hover:bg-neutral-tertiary rounded-base p-2"
-                        >
-                        ✖
-                        </button>
 
                         <div className="text-center">
                         <svg

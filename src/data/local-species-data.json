@@ -21,15 +21,6 @@
       "shortDesc": "The elf owl (Micrathene whitneyi) is a small grayish-brown bird about the size of a sparrow found in the Southwestern United States, central Mexico, and the Baja California peninsula. It has pale yellow eyes highlighted by thin white eyebrows and a gray bill with a horn-colored tip. The elf owl frequently inhabits woodpecker holes in saguaro cacti; it also nests in natural tree cavities. It is nocturnal and feeds primarily on insects."
     },
     {
-      "binomialName": "Telespiza persecutrix",
-      "commonName": "Kauaʻi finch",
-      "location": "Kauai and Oahu, Hawaii, United States",
-      "wikiLink": "https://en.wikipedia.org/wiki/Kaua%CA%BBi_finch",
-      "lastRecord": "1425-1660",
-      "imageSrc": "false",
-      "shortDesc": "The Kauai finch (Telespiza persecutrix) is an extinct bird in the genus Telespiza of the family Fringillidae. It was endemic to the Hawaiian islands of Kauai and Oahu. It is only known from fossil remains and likely became extinct before the first Europeans visited Hawaii in 1778."
-    },
-    {
       "binomialName": "Canariomys bravoi",
       "commonName": "Tenerife giant rat",
       "location": "Tenerife, Canary Islands, Spain",
@@ -37,15 +28,6 @@
       "lastRecord": "1100-1300",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Canariomys_bravoi_skull.JPG/220px-Canariomys_bravoi_skull.JPG",
       "shortDesc": "The Tenerife giant rat (Canariomys bravoi) is an extinct species of rodent endemic to the island of Tenerife, the largest of the Canary Islands, Spain. Many remains have been found during archeological digs. Most remains are from the Pleistocene. Radiocarbon dating has placed some of the finds in the late Pleistocene."
-    },
-    {
-      "binomialName": "Acrocephalus nijoi",
-      "commonName": "Aguijan reed warbler",
-      "location": "Aguijan, Mariana Islands",
-      "wikiLink": "https://en.wikipedia.org/wiki/Aguijan_reed_warbler",
-      "lastRecord": "1995",
-      "imageSrc": "false",
-      "shortDesc": "The Aguiguan reed warbler or Aguijan reed warbler (Acrocephalus nijoi) was a bird that originally occurred on the Northern Mariana Island Aguigan. It is considered a subspecies of the nightingale reed warbler by some taxonomists. Of this subspecies there never have been reports of a substantial population. In 1982 only four up to possibly 15 birds of the subspecies have been counted, and since 1995 none has been sighted, despite extended efforts to find specimens."
     },
     {
       "binomialName": "Spizella wortheni browni",
@@ -93,15 +75,6 @@
       "shortDesc": "The Kauaʻi nukupuʻu (Hemignathus hanapepe) was a species of nukupuʻu once found throughout parts of the Hawaiian island of Kauaʻi. It was an insect eater that picked out its tiny prey from tree bark. The males were yellowish with brown wings, while the females were grayish brown with a yellow throat streak. "
     },
     {
-      "binomialName": "Cyclura cornuta onchiopsis",
-      "commonName": "Navassa Island iguana",
-      "location": "Navassa Island",
-      "wikiLink": "https://en.wikipedia.org/wiki/Navassa_Island_iguana",
-      "lastRecord": "1878",
-      "imageSrc": "false",
-      "shortDesc": "Cyclura cornuta onchiopsis, the Navassa Island iguana, was a subspecies of rhinoceros iguana that was found on the Caribbean island of Navassa."
-    },
-    {
       "binomialName": "Antrostomus maculosus",
       "commonName": "Cayenne nightjar",
       "location": "Northwestern French Guiana",
@@ -138,15 +111,6 @@
       "shortDesc": "The New Caledonian lorikeet (Vini diadema) is a potentially extinct lorikeet endemic to the Melanesian island of New Caledonia."
     },
     {
-      "binomialName": "Ormosia howii",
-      "commonName": "Hainan ormosia",
-      "location": "Hainan and Guangdong, China",
-      "wikiLink": "https://en.wikipedia.org/wiki/Hainan_ormosia",
-      "lastRecord": "1957",
-      "imageSrc": "false",
-      "shortDesc": "Ormosia howii, the Hainan ormosia, is a species of flowering plant in the family Fabaceae native to southern China. It was initially found on Diaoluo Shan, Hainan Island in 1954 and then in Yangchun, Guangdong in 1957, both times in extremely small populations. The species is now apparently extinct. It was a small tree, 10 metres (33 ft) high, growing in open forests on mountain slopes."
-    },
-    {
       "binomialName": "Oceanodroma macrodactyla",
       "commonName": "Guadalupe storm petrel",
       "location": "Guadalupe Island, Mexico",
@@ -163,15 +127,6 @@
       "lastRecord": "9550 BCE",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Euceratherium_BW.jpg/220px-Euceratherium_BW.jpg",
       "shortDesc": "The shrub-ox (Euceratherium collinum) is an extinct genus and species of ovibovine caprine native to North America along with Bootherium (Bootherium bombifrons) and Soergel's ox (Soergelia mayfieldi)."
-    },
-    {
-      "binomialName": "Coregonus alpenae",
-      "commonName": "Longjaw cisco",
-      "location": "Lakes Michigan, Huron, and Erie",
-      "wikiLink": "https://en.wikipedia.org/wiki/Longjaw_cisco",
-      "lastRecord": "1975",
-      "imageSrc": "false",
-      "shortDesc": "The longjaw cisco (Coregonus alpenae) was a deep-water cisco or chub, usually caught at depths of 100 metres (328 ft) or more from Lakes Huron, Michigan, and Erie. Its Latin name was derived from Alpena, a city in Michigan. Silver colored and growing to a maximum length of about 30 centimeters (12 inches) long, the extinction of longjaw cisco was a result of overfishing, pollution of the Great Lakes and the disruption of Great Lakes food chains after the introduction of the sea lamprey."
     },
     {
       "binomialName": "Rhagamys orthodon",
@@ -237,24 +192,6 @@
       "shortDesc": "Noronhomys vespuccii, also known as Vespucci's rodent, is an extinct rat species from the islands of Fernando de Noronha off northeastern Brazil. Italian explorer Amerigo Vespucci may have seen it on a visit to Fernando de Noronha in 1503, but it subsequently became extinct, perhaps because of the exotic rats and mice introduced by the first explorers of the island. Numerous but fragmentary fossil remains of the animal, of uncertain but probably Holocene age, were discovered in 1973 and described in 1999."
     },
     {
-      "binomialName": "Characodon garmani",
-      "commonName": "Parras characodon",
-      "location": "Southern Coahuila, Mexico",
-      "wikiLink": "https://en.wikipedia.org/wiki/Parras_characodon",
-      "lastRecord": "1880-1889?",
-      "imageSrc": "false",
-      "shortDesc": "The Parras characodon (Characodon garmani) is a species of goodeid fish once endemic to Coahuila, Mexico. Its natural habitats were destroyed between 1900 and 1953, and no records have been made in the last century; it is considered extinct, although the validity of this taxon and where the actual type locality is are subject to some doubt. The specific name honours the American herpetologist and ichthyologist Samuel Garman (1843-1927)."
-    },
-    {
-      "binomialName": "Anas georgica niceforoi",
-      "commonName": "Niceforos pintail",
-      "location": "Central Colombia",
-      "wikiLink": "https://en.wikipedia.org/wiki/Niceforo%27s_pintail",
-      "lastRecord": "1952",
-      "imageSrc": "false",
-      "shortDesc": "Niceforo's pintail (Anas georgica niceforoi) is an extinct subspecies of the yellow-billed pintail (Anas georgica), a duck in the dabbling duck subfamily Anatinae. One of three subspecies, it was found in central Colombia but became extinct in the 1950s, being last seen in 1952."
-    },
-    {
       "binomialName": "Neovison macrodon",
       "commonName": "Sea mink",
       "location": "Atlantic coast of Canada and New England",
@@ -271,15 +208,6 @@
       "lastRecord": "1938",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pitta_anerythra_1902.jpg/220px-Pitta_anerythra_1902.jpg",
       "shortDesc": "The black-faced pitta (Pitta anerythra) is a species of bird in the family Pittidae. It is found on Bougainville Island in Papua New Guinea (subspecies pallida), and Choiseul Island (subspecies nigrifrons) as well as Santa Isabel Island (nominate form) in the Solomon Islands.  Its natural habitat is subtropical or tropical moist lowland forest. It is threatened by habitat loss and most certainly by introduced predators and/or competitors."
-    },
-    {
-      "binomialName": "Myadestes woahensis",
-      "commonName": "ʻĀmaui",
-      "location": "Oahu, Hawaii, United States",
-      "wikiLink": "https://en.wikipedia.org/wiki/%CA%BB%C4%80maui",
-      "lastRecord": "1825",
-      "imageSrc": "false",
-      "shortDesc": "The Oahu thrush or  ʻāmaui (Myadestes lanaiensis woahensis) was a subspecies of the olomaʻo endemic to the island of Oahu. It was the first member of its genus to become extinct, c. 1850. Some taxonomic authorities consider it a distinct species, but the International Ornithological Congress presently classifies it as a subspecies of M. lanaiensis."
     },
     {
       "binomialName": "Oraristix brea",
@@ -5952,6 +5880,15 @@
       "shortDesc": "Barbodes flavifuscus, known locally as the katapa-tapa, was a species of cyprinid fish endemic to Lake Lanao in Mindanao, the Philippines.  This species reached a length of 10.5 centimetres (4.1 in) SL. It is now considered extinct."
     },
     {
+      "binomialName": "Acrocephalus nijoi",
+      "commonName": "Aguijan reed warbler",
+      "location": "Aguijan, Mariana Islands",
+      "wikiLink": "https://en.wikipedia.org/wiki/Aguijan_reed_warbler",
+      "lastRecord": "1995",
+      "imageSrc": "false",
+      "shortDesc": "The Aguiguan reed warbler or Aguijan reed warbler (Acrocephalus nijoi) was a bird that originally occurred on the Northern Mariana Island Aguigan. It is considered a subspecies of the nightingale reed warbler by some taxonomists. Of this subspecies there never have been reports of a substantial population. In 1982 only four up to possibly 15 birds of the subspecies have been counted, and since 1995 none has been sighted, despite extended efforts to find specimens."
+    },
+    {
       "binomialName": "Propraopus sulcatus",
       "commonName": "Eastern giant armadillo",
       "location": "Eastern South America",
@@ -6211,6 +6148,15 @@
       "lastRecord": "1777",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gallirallus_hypoleucus.jpg/220px-Gallirallus_hypoleucus.jpg",
       "shortDesc": "The Tongatapu rail (Gallirallus hypoleucus) was a species of bird in the family Rallidae. It was apparently native to the island of Tongatapu in the Kingdom of Tonga, in Polynesia in the south-west Pacific Ocean.  It is known only from brief descriptions of a specimen, now lost, collected from Tongatapu in 1777 in the course of James Cook's third voyage to the Pacific, and from a contemporary illustration by Georg Forster."
+    },
+    {
+      "binomialName": "Cyclura cornuta onchiopsis",
+      "commonName": "Navassa Island iguana",
+      "location": "Navassa Island",
+      "wikiLink": "https://en.wikipedia.org/wiki/Navassa_Island_iguana",
+      "lastRecord": "1878",
+      "imageSrc": "false",
+      "shortDesc": "Cyclura cornuta onchiopsis, the Navassa Island iguana, was a subspecies of rhinoceros iguana that was found on the Caribbean island of Navassa."
     },
     {
       "binomialName": "Pseudomys gouldii",
@@ -6923,6 +6869,34 @@
       "imageSrc": "false",
       "shortDesc": "Antidorcas bondi, or Bond's springbok, is an extinct species of antelope whose fossils have been found in Zimbabwe and South Africa."
     },
+
+    {
+      "binomialName": "Characodon garmani",
+      "commonName": "Parras characodon",
+      "location": "Southern Coahuila, Mexico",
+      "wikiLink": "https://en.wikipedia.org/wiki/Parras_characodon",
+      "lastRecord": "1880-1889?",
+      "imageSrc": "false",
+      "shortDesc": "The Parras characodon (Characodon garmani) is a species of goodeid fish once endemic to Coahuila, Mexico. Its natural habitats were destroyed between 1900 and 1953, and no records have been made in the last century; it is considered extinct, although the validity of this taxon and where the actual type locality is are subject to some doubt. The specific name honours the American herpetologist and ichthyologist Samuel Garman (1843-1927)."
+    },
+    {
+      "binomialName": "Myadestes woahensis",
+      "commonName": "ʻĀmaui",
+      "location": "Oahu, Hawaii, United States",
+      "wikiLink": "https://en.wikipedia.org/wiki/%CA%BB%C4%80maui",
+      "lastRecord": "1825",
+      "imageSrc": "false",
+      "shortDesc": "The Oahu thrush or  ʻāmaui (Myadestes lanaiensis woahensis) was a subspecies of the olomaʻo endemic to the island of Oahu. It was the first member of its genus to become extinct, c. 1850. Some taxonomic authorities consider it a distinct species, but the International Ornithological Congress presently classifies it as a subspecies of M. lanaiensis."
+    },
+    {
+      "binomialName": "Anas georgica niceforoi",
+      "commonName": "Niceforos pintail",
+      "location": "Central Colombia",
+      "wikiLink": "https://en.wikipedia.org/wiki/Niceforo%27s_pintail",
+      "lastRecord": "1952",
+      "imageSrc": "false",
+      "shortDesc": "Niceforo's pintail (Anas georgica niceforoi) is an extinct subspecies of the yellow-billed pintail (Anas georgica), a duck in the dabbling duck subfamily Anatinae. One of three subspecies, it was found in central Colombia but became extinct in the 1950s, being last seen in 1952."
+    },
     {
       "binomialName": "Malpaisomys insularis",
       "commonName": "Lava mouse",
@@ -7012,6 +6986,15 @@
       "lastRecord": "1960-1969",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pseudoscaphirhynchus_fedtschenkoi.jpg/220px-Pseudoscaphirhynchus_fedtschenkoi.jpg",
       "shortDesc": "The Syr Darya sturgeon (Pseudoscaphirhynchus fedtschenkoi) is a species of fish in the family Acipenseridae. It is found in Kazakhstan, Tajikistan and Uzbekistan, where it is endemic to the Syr Darya River and, before its drainage, the Aral Sea. Due to the loss of its breeding site and damming projects over the length of the river, it is currently considered Critically Endangered and likely extinct, as no sightings have been reported since the 1960s. The sturgeon is among the 25 most wanted lost species that are the focus of Global Wildlife Conservation's Search for Lost Species initiative."
+    },
+    {
+      "binomialName": "Ormosia howii",
+      "commonName": "Hainan ormosia",
+      "location": "Hainan and Guangdong, China",
+      "wikiLink": "https://en.wikipedia.org/wiki/Hainan_ormosia",
+      "lastRecord": "1957",
+      "imageSrc": "false",
+      "shortDesc": "Ormosia howii, the Hainan ormosia, is a species of flowering plant in the family Fabaceae native to southern China. It was initially found on Diaoluo Shan, Hainan Island in 1954 and then in Yangchun, Guangdong in 1957, both times in extremely small populations. The species is now apparently extinct. It was a small tree, 10 metres (33 ft) high, growing in open forests on mountain slopes."
     },
     {
       "binomialName": "Panthera leo melanochaita",
@@ -7167,6 +7150,15 @@
       "shortDesc": "For the purposes of this article, the Caribbean includes all islands in the Caribbean Sea (except for small islets close to the mainland) and the Bahamas, Turks and Caicos Islands, and Barbados, which are not in the Caribbean Sea but biogeographically belong to the same Caribbean bioregion."
     },
     {
+      "binomialName": "Telespiza persecutrix",
+      "commonName": "Kauaʻi finch",
+      "location": "Kauai and Oahu, Hawaii, United States",
+      "wikiLink": "https://en.wikipedia.org/wiki/Kaua%CA%BBi_finch",
+      "lastRecord": "1425-1660",
+      "imageSrc": "false",
+      "shortDesc": "The Kauai finch (Telespiza persecutrix) is an extinct bird in the genus Telespiza of the family Fringillidae. It was endemic to the Hawaiian islands of Kauai and Oahu. It is only known from fossil remains and likely became extinct before the first Europeans visited Hawaii in 1778."
+    },
+    {
       "binomialName": "Coryphomys buehleri",
       "commonName": "Buhlers coryphomys",
       "location": "Timor",
@@ -7201,6 +7193,15 @@
       "lastRecord": "130 BCE",
       "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Canariomys_tamarani_fossils.JPG/220px-Canariomys_tamarani_fossils.JPG",
       "shortDesc": "The Gran Canaria giant rat (Canariomys tamarani) is an extinct species of rat endemic to the island of Gran Canaria (Canary Islands, Spain)."
+    },
+    {
+      "binomialName": "Coregonus alpenae",
+      "commonName": "Longjaw cisco",
+      "location": "Lakes Michigan, Huron, and Erie",
+      "wikiLink": "https://en.wikipedia.org/wiki/Longjaw_cisco",
+      "lastRecord": "1975",
+      "imageSrc": "false",
+      "shortDesc": "The longjaw cisco (Coregonus alpenae) was a deep-water cisco or chub, usually caught at depths of 100 metres (328 ft) or more from Lakes Huron, Michigan, and Erie. Its Latin name was derived from Alpena, a city in Michigan. Silver colored and growing to a maximum length of about 30 centimeters (12 inches) long, the extinction of longjaw cisco was a result of overfishing, pollution of the Great Lakes and the disruption of Great Lakes food chains after the introduction of the sea lamprey."
     },
     {
       "binomialName": "Dromaius minor",

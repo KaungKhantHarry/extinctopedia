@@ -4,11 +4,17 @@ import Link from 'next/link';
 import { ExtinctSpecies } from '@/type';
 import pic from '../../../../../public/species/1000_F_597479556_7bbQ7t4Z8k3xbAloHFHVdZIizWK1PdOo.jpg'
 
-const getValidImageUrl = (url?: string | boolean) => {
+export const getValidImageUrl = (url?: string | boolean) => {
     if (!url || url === "false") return pic; 
     if (typeof url === "string" && url.startsWith("http")) return url;
     return pic;
 };
+
+export const getDefaultCommonName = (name?: string | boolean) => {
+    if (!name || name === "false") return "This Species dont't have common name!";
+    else return name;
+}
+
 interface SpeciesCardProps {
   species: ExtinctSpecies;
 }
@@ -25,7 +31,7 @@ const SpeciesCard = ({ species }: SpeciesCardProps) => {
             </div>
             <div className='text-center p-5 flex flex-col gap-3'>
                 <h1 className='font-semibold text-xl'>
-                    {species.commonName}
+                    {getDefaultCommonName(species.commonName)}
                 </h1>
                 <p className='italic'>
                     {species.binomialName} 

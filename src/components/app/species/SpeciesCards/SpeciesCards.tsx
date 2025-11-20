@@ -14,6 +14,7 @@ const SpeciesCards = () => {
     const [page, setPage] = useState<number>(1);
     const [loading, setLoading] = useState<boolean>(false);
     const [hasMore, setHasMore] = useState<boolean>(true);
+    const [sortBy, setSortBy] = useState<string>("");
 
     const loaderDivRef = useRef<HTMLDivElement | null>(null);
     const isFetchingRef = useRef(false);
@@ -75,19 +76,48 @@ const SpeciesCards = () => {
         };
     }, [hasMore]); 
 
+    const sortSpecies = [...species].sort((a: ExtinctSpecies, b: ExtinctSpecies) => {
+        if(sortBy === "") {
+            return 0;
+        };
+
+        switch (sortBy) {
+            case "commonNameAZ":
+                return a.commonName.localeCompare(b.commonName);
+
+            case "lastRecord":
+                return new Date(b.lastRecord).getTime() - new Date(a.lastRecord).getTime();
+
+            default:
+                return 0;
+        }
+    });
+
     const renderedItems = useMemo(() =>
         {
-            return species.map((s) => (
+            return sortSpecies.map((s) => (
                 <SpeciesCard 
                     key={s.binomialName}
                     species={s}/>
             ));
         },
-        [species]
+        [species, sortBy]
     );
 
     return (
         <>
+            <div className="flex justify-end px-5 pt-10">
+                <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value)}
+                    className="border p-2 rounded-md"
+                >
+                    <option value="">Default (No sort)</option>
+                    <option value="lastRecord">Latest Records</option>
+                    <option value="commonNameAZ">Common Name (A → Z)</option>
+                </select>
+            </div>
+
             <div className='px-5 py-15 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5'>
                 {renderedItems}
             </div>
