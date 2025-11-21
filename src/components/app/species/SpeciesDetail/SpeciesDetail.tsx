@@ -6,8 +6,9 @@ import { GiEarthAfricaEurope } from "react-icons/gi";
 import Link from 'next/link';
 import { getDefaultCommonName, getValidImageUrl } from '../SpeciesCard/SpeciesCard';
 import { useAuth } from '@/context/AuthContext';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '@/firebase/config';
+import { useEffect, useState } from 'react';
 
 const SpeciesDetail = () => {
 
@@ -15,6 +16,7 @@ const SpeciesDetail = () => {
     const speciesData = searchParams.get("species");
     const species = speciesData ? JSON.parse(speciesData) : null;
     const { user } = useAuth();
+    const [isSaved, setIsSaved] = useState<boolean>(false);
 
     const handleSaveSpeciesToFav = async () => {
         if(!user) {
@@ -23,15 +25,38 @@ const SpeciesDetail = () => {
         }   
         try {
             await setDoc(doc(db, "users", user.uid, "savedSpecies", species.binomialName), {
-                speciesBinomialName: species.binomialName,
+                binomialName: species.binomialName,
+                commonName: species.commonName,
+                location: species.location,
+                wikiLink: species.wikiLink,
+                lastRecord: species.lastRecord, 
+                imageSrc: species.imageSrc,
+                shortDesc: species.shortDesc,
                 savedAt: Date.now(),
             });
 
+            setIsSaved(true);
             alert("Species saved!");
         } catch (error) {
             console.log("Error: ", error);
         }
     };
+
+    useEffect(() => {
+        if (!user) {
+            setIsSaved(false);
+            return;
+        }
+
+        const checkIfSaved = async () => {
+        const docRef = doc(db, "users", user.uid, "savedSpecies", species.binomialName);
+        const docSnap = await getDoc(docRef);
+
+        setIsSaved(docSnap.exists());
+        };
+
+        checkIfSaved();
+    }, [user, species.binomialName]);
 
     return (
         <div className='p-5'>
@@ -77,11 +102,19 @@ const SpeciesDetail = () => {
                         </div>
                     </div>
                     <div className='flex justify-between md:justify-start md:gap-10'>
-                        <button 
-                            onClick={handleSaveSpeciesToFav}
-                            className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
-                            Save
-                        </button>
+                        {
+                            isSaved ? (
+                                <button disabled className="bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black">
+                                    Saved in Favorites
+                                </button>
+                            ) : (
+                                <button 
+                                    onClick={handleSaveSpeciesToFav}
+                                    className= 'bg-[#A9C3F7] pointer px-5 py-2 font-mono font-semibold dark:text-black'>
+                                    Save
+                                </button>
+                            )
+                        }
                         <Link href="/species" className= 'bg-[#A9C3F7] px-5 py-2 font-mono font-semibold dark:text-black'>
                             Go Back
                         </Link>

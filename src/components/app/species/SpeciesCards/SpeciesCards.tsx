@@ -98,7 +98,8 @@ const SpeciesCards = () => {
             return sortSpecies.map((s) => (
                 <SpeciesCard 
                     key={s.binomialName}
-                    species={s}/>
+                    species={s}
+                    isSaved={false} />
             ));
         },
         [species, sortBy]

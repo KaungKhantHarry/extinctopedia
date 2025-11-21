@@ -17,15 +17,16 @@ export const getDefaultCommonName = (name?: string | boolean) => {
 
 interface SpeciesCardProps {
   species: ExtinctSpecies;
+  isSaved: boolean;
 }
 
-const SpeciesCard = ({ species }: SpeciesCardProps) => {
+const SpeciesCard = ({ species, isSaved = false }: SpeciesCardProps) => {
     return (
         <Link href={{
                 pathname: `/species/${species.binomialName}`,
                 query: { species: JSON.stringify(species) },
             }}
-            className='size-auto bg-white flex flex-col gap-3 rounded-2xl shadow-2xl dark:bg-gray-800'>
+            className='size-auto xl:h-[500px] bg-white flex flex-col gap-3 rounded-2xl shadow-2xl dark:bg-gray-800'>
             <div className="relative w-full h-64">
                  <Image src={getValidImageUrl(species.imageSrc)} alt={species.commonName || "Extinct species"} className='object-cover rounded-t-2xl' fill/>
             </div>
