@@ -31,10 +31,10 @@ const LoginPage = () => {
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
                     <div className="bg-white dark:text-black w-[600px] max-w-[90%] rounded-xl">
                         <div className="flex">
-                            <div className="w-[60%] rounded-l-xl relative h-[400px] bg-cover bg-center bg-no-repeat z-10"
+                            <div className="hidden md:block md:w-[60%] md:rounded-l-xl md:relative md:h-[400px] md:bg-cover md:bg-center md:bg-no-repeat md:z-10"
                                 style={{ backgroundImage: `url(${bgPic.src})` }}>
                             </div>
-                            <div className="w-[40%] flex flex-col bg-[#EBE8D4] rounded-r-xl p-3">
+                            <div className="w-full md:w-[40%] flex flex-col rounded-xl bg-[#EBE8D4] md:rounded-r-xl p-3">
                                 <div className="h-[10%] flex justify-end">
                                         <button
                                         onClick={() => setOpen(false)}
@@ -50,7 +50,7 @@ const LoginPage = () => {
                                     <h2 className="text-xl font-semibold tracking-tight">
                                         Extinctopedia
                                     </h2>
-                                    <h3 className="text-md font-bold tracking-tighter font-mono">
+                                    <h3 className="text-md font-bold tracking-tighter font-mono pb-5">
                                         Explore what we have lost and what we must protect.
                                     </h3>
                                 </div>
