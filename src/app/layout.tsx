@@ -33,7 +33,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
           <AuthProvider>
             <NavBar />
-            <div className="pt-[150px]">
+            <div className="pt-[70px] md:pt-[105px]">
                 {children}
             </div>
           </AuthProvider>
