@@ -33,7 +33,7 @@ const Footer = () => {
                                 <p>▼</p>
                             </div>
                         ) : (
-                            <div className="font-mono text-xl px-3 font-semibold py-2 flex justify-between text-md border-t-2 border-black dark:border-white">
+                            <div className="font-mono text-white bg-black text-xl px-3 font-semibold py-2 flex justify-between text-md border-t-2 border-black dark:border-white">
                                 <p>{data.header}</p>
                                 <p>▲</p>
                             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                                         href={data.link} 
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="font-mono text-md tracking-wide hover:underline hover:text-[#005A25]"
+                                        className="font-mono dark:text-black text-md tracking-wide hover:underline hover:text-[#005A25]"
                                     >
                                         {data.name}
                                     </Link>
