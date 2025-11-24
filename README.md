@@ -6,7 +6,7 @@
 ---
 
 ## 🌍 Live Demo
-🚧 _Coming Soon_ (You can add your deployed link here once hosted on Vercel)
+Check out the live version here: [Extinctopedia Live Demo](https://extinctopedia.vercel.app/)
 
 ---
 
@@ -17,12 +17,12 @@ This project showcases clean UI design, dynamic routing, and responsive layouts 
 ---
 
 ## ⚡ Features
-- 🔍 Search extinct animals by name or keyword  
-- 🧭 Filter by time period or species type  
+- 🧭 Sort by LastRecord or Alphabet  
 - 🌗 Dark & Light theme support (Next Themes)  
 - 📱 Fully responsive across all devices  
 - ⚡ High performance with server-side rendering (Next.js)  
 - 💾 Ready for API integration  
+- 💤 Supports lazy loading for better performance  
 
 ---
 
